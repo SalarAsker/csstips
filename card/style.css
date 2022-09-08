@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ html{
+    background-color: white;
+} 
+body{
+    /* background-color: coral; */
+    width: 80%;
+    margin: 0 auto;
+    
+}
+ .cards{
+    
+   /* background-color: lightblue; */
+}
+.card_1{
+   
+    width: 30%;
+    border: 1px solid black;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.image_container{
+    background-color: yellow;
+}
+.image_container img{
+    width: 100%;
+    height: auto;
+}
+.title, .description{
+    padding: 5px;
+}
+.buy{
+    border: none;
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: auto;
+    align-self: center;
+} 
