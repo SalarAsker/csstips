@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* flex container */
+.flex__container{
+    background-color: rgb(206, 194, 194);
+    padding: 1rem;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+/* flex item */
+.navigations {
+   order: 1;
+}
+/* flex item */
+.site__logo{
+    width: 250px;
+    margin-left: auto;
+}
+.navigations a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+/* flex item */
+.btn__join{
+    width: 150px;
+    padding: 10px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 25px;
+    background-color: blue;
+    color: white;
+    margin: 10px 10px;
+    order: 2;
+}
