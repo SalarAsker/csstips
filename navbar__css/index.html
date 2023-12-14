@@ -21,3 +21,69 @@
 
 </body>
 </html>
+
+
+// grid
+string[,] grid = new string[20, 10];
+Random rnd = new Random();
+
+// dot
+for (int i = 0; i < grid.GetLength(0); i++)
+{
+    for (int j = 0;j < grid.GetLength(1); j++)
+    {
+        grid[i, j] = ".";
+    }    
+}
+for (int i = 0; i < 6; i++)
+{
+    grid[getrandomX(), getrandomY()] = "f";
+    //Console.WriteLine($"{getrandomX()}  {getrandomY()}");
+}
+
+direction dd = direction.right;
+
+while (true)
+{
+   
+
+    Console.Clear();
+    Console.WriteLine($"Left, Right, Up, Down");
+    draw();
+    grid[0, 0] = "ö";
+    string d = Console.ReadLine();
+    if ( d == "a") {
+        dd = direction.left;
+    }
+
+ 
+}
+
+int getrandomX()
+{
+    return rnd.Next(0, grid.GetLength(0));
+}
+int getrandomY()
+{
+    return rnd.Next(0, grid.GetLength(1));
+}
+
+void draw()
+{
+    // print grid
+    for (int i = 0; i < grid.GetLength(0); i++)
+    {
+        for (int j = 0; j < grid.GetLength(1); j++)
+        {
+            Console.Write($"{grid[i, j]}    ");
+        }
+        Console.WriteLine();
+    }
+}
+enum direction
+{
+    left,
+    right,
+    top,
+    down
+};
